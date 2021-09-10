@@ -339,7 +339,7 @@ extension Client {
 // emit the entire class altogether. Moving this to an extension for now solves the issue.
 
 extension ObjCCompat.Event {
-    convenience init<T>(event: ParseLiveQuery.Event<T>) {
+    convenience init<T>(event: TMGParseLiveQuery.Event<T>) {
         let results: (type: PFLiveQueryEventType, object: PFObject) = {
             switch event {
             case .entered(let object): return (.entered, object)
