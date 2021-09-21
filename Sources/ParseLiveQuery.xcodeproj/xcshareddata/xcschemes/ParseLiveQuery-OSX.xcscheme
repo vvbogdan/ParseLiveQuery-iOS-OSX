@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F5903CE91BD999C500C3EFFE"
-               BuildableName = "ParseLiveQuery.framework"
+               BuildableName = "TMGParseLiveQuery.framework"
                BlueprintName = "ParseLiveQuery-OSX"
                ReferencedContainer = "container:ParseLiveQuery.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F5903CE91BD999C500C3EFFE"
-            BuildableName = "ParseLiveQuery.framework"
+            BuildableName = "TMGParseLiveQuery.framework"
             BlueprintName = "ParseLiveQuery-OSX"
             ReferencedContainer = "container:ParseLiveQuery.xcodeproj">
          </BuildableReference>
@@ -60,7 +60,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F5903CE91BD999C500C3EFFE"
-            BuildableName = "ParseLiveQuery.framework"
+            BuildableName = "TMGParseLiveQuery.framework"
             BlueprintName = "ParseLiveQuery-OSX"
             ReferencedContainer = "container:ParseLiveQuery.xcodeproj">
          </BuildableReference>

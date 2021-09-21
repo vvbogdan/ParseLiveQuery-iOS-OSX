@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "708836932561F55B005B32F0"
-               BuildableName = "ParseLiveQuery_tvOS.framework"
+               BuildableName = "TMGParseLiveQuery_tvOS.framework"
                BlueprintName = "ParseLiveQuery-tvOS"
                ReferencedContainer = "container:ParseLiveQuery.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "708836932561F55B005B32F0"
-            BuildableName = "ParseLiveQuery_tvOS.framework"
+            BuildableName = "TMGParseLiveQuery_tvOS.framework"
             BlueprintName = "ParseLiveQuery-tvOS"
             ReferencedContainer = "container:ParseLiveQuery.xcodeproj">
          </BuildableReference>

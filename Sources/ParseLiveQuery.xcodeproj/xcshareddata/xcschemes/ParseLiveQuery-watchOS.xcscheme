@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "708836712561F502005B32F0"
-               BuildableName = "ParseLiveQuery_watchOS.framework"
+               BuildableName = "TMGParseLiveQuery_watchOS.framework"
                BlueprintName = "ParseLiveQuery-watchOS"
                ReferencedContainer = "container:ParseLiveQuery.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "708836712561F502005B32F0"
-            BuildableName = "ParseLiveQuery_watchOS.framework"
+            BuildableName = "TMGParseLiveQuery_watchOS.framework"
             BlueprintName = "ParseLiveQuery-watchOS"
             ReferencedContainer = "container:ParseLiveQuery.xcodeproj">
          </BuildableReference>
