@@ -9,7 +9,7 @@
 
 import Foundation
 import Parse
-import ParseLiveQuery
+import TMGParseLiveQuery
 
 Message.registerSubclass()
 Room.registerSubclass()
@@ -19,7 +19,7 @@ Parse.initialize(with: ParseClientConfiguration {
     $0.server = "http://localhost:1337/parse"
     })
 
-let liveQueryClient = ParseLiveQuery.Client()
+let liveQueryClient = TMGParseLiveQuery.Client()
 
 class ChatRoomManager {
     fileprivate var currentChatRoom: Room?

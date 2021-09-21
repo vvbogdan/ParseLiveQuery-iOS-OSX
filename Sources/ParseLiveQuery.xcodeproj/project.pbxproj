@@ -319,10 +319,10 @@
 		4A1A99611E5E8DBB0047B84B /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = ../Carthage/Checkouts/Starscream/Starscream.xcodeproj; sourceTree = "<group>"; };
 		4A6AE30B200FB23E007CA404 /* Parse.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Parse.xcodeproj; path = "../Carthage/Checkouts/Parse-SDK-iOS-OSX/Parse/Parse.xcodeproj"; sourceTree = "<group>"; };
 		4A6AE337200FB569007CA404 /* Bolts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Bolts.xcodeproj; path = "../Carthage/Checkouts/Bolts-ObjC/Bolts.xcodeproj"; sourceTree = "<group>"; };
-		708836722561F502005B32F0 /* ParseLiveQuery_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParseLiveQuery_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		708836722561F502005B32F0 /* TMGParseLiveQuery_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TMGParseLiveQuery_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		708836742561F503005B32F0 /* ParseLiveQuery_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseLiveQuery_watchOS.h; sourceTree = "<group>"; };
 		708836752561F503005B32F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		708836942561F55B005B32F0 /* ParseLiveQuery_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParseLiveQuery_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		708836942561F55B005B32F0 /* TMGParseLiveQuery_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TMGParseLiveQuery_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		708836962561F55B005B32F0 /* ParseLiveQuery_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseLiveQuery_tvOS.h; sourceTree = "<group>"; };
 		708836972561F55B005B32F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC2D6789239131E500DC849E /* BoltsSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BoltsSwift.xcodeproj; path = "../Carthage/Checkouts/Bolts-Swift/BoltsSwift.xcodeproj"; sourceTree = "<group>"; };
@@ -333,10 +333,10 @@
 		F54D58B71C8E3446009F8D6C /* ClientPrivate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientPrivate.swift; sourceTree = "<group>"; };
 		F5591BA31BD720E10072F966 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		F5591BA91BD97BB70072F966 /* QueryEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryEncoder.swift; sourceTree = "<group>"; };
-		F5903CEA1BD999C500C3EFFE /* ParseLiveQuery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParseLiveQuery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5903CEA1BD999C500C3EFFE /* TMGParseLiveQuery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TMGParseLiveQuery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59CA92E1C8E496200329737 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Internal/Errors.swift; sourceTree = "<group>"; };
 		F5A88F491C9B6EBA002F0E0D /* PFQuery+Subscribe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PFQuery+Subscribe.swift"; sourceTree = "<group>"; };
-		F5A9BFCA1BE0248D00E78326 /* ParseLiveQuery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParseLiveQuery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A9BFCA1BE0248D00E78326 /* TMGParseLiveQuery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TMGParseLiveQuery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -499,10 +499,10 @@
 		F5256FCF1BD71F9A0052FB8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F5903CEA1BD999C500C3EFFE /* ParseLiveQuery.framework */,
-				F5A9BFCA1BE0248D00E78326 /* ParseLiveQuery.framework */,
-				708836722561F502005B32F0 /* ParseLiveQuery_watchOS.framework */,
-				708836942561F55B005B32F0 /* ParseLiveQuery_tvOS.framework */,
+				F5903CEA1BD999C500C3EFFE /* TMGParseLiveQuery.framework */,
+				F5A9BFCA1BE0248D00E78326 /* TMGParseLiveQuery.framework */,
+				708836722561F502005B32F0 /* TMGParseLiveQuery_watchOS.framework */,
+				708836942561F55B005B32F0 /* TMGParseLiveQuery_tvOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -584,7 +584,7 @@
 			);
 			name = "ParseLiveQuery-watchOS";
 			productName = "ParseLiveQuery-watchOS";
-			productReference = 708836722561F502005B32F0 /* ParseLiveQuery_watchOS.framework */;
+			productReference = 708836722561F502005B32F0 /* TMGParseLiveQuery_watchOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		708836932561F55B005B32F0 /* ParseLiveQuery-tvOS */ = {
@@ -603,7 +603,7 @@
 			);
 			name = "ParseLiveQuery-tvOS";
 			productName = "ParseLiveQuery-tvOS";
-			productReference = 708836942561F55B005B32F0 /* ParseLiveQuery_tvOS.framework */;
+			productReference = 708836942561F55B005B32F0 /* TMGParseLiveQuery_tvOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F5903CE91BD999C500C3EFFE /* ParseLiveQuery-OSX */ = {
@@ -623,7 +623,7 @@
 			);
 			name = "ParseLiveQuery-OSX";
 			productName = ParseLiveQuery;
-			productReference = F5903CEA1BD999C500C3EFFE /* ParseLiveQuery.framework */;
+			productReference = F5903CEA1BD999C500C3EFFE /* TMGParseLiveQuery.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F5A9BFB61BE0248D00E78326 /* ParseLiveQuery-iOS */ = {
@@ -643,7 +643,7 @@
 			);
 			name = "ParseLiveQuery-iOS";
 			productName = ParseLiveQuery;
-			productReference = F5A9BFCA1BE0248D00E78326 /* ParseLiveQuery.framework */;
+			productReference = F5A9BFCA1BE0248D00E78326 /* TMGParseLiveQuery.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1068,7 +1068,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parse.livequery.watchos.ParseLiveQuery-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = TMGParseLiveQuery_watchOS;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1116,7 +1116,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parse.livequery.watchos.ParseLiveQuery-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = TMGParseLiveQuery_watchOS;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1167,7 +1167,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parse.livequery.tvos.ParseLiveQuery-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = TMGParseLiveQuery_tvOS;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1214,7 +1214,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parse.livequery.tvos.ParseLiveQuery-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = TMGParseLiveQuery_tvOS;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1320,7 +1320,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 2.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.parse.livequery.osx;
-				PRODUCT_NAME = ParseLiveQuery;
+				PRODUCT_NAME = TMGParseLiveQuery;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1347,7 +1347,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 2.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.parse.livequery.osx;
-				PRODUCT_NAME = ParseLiveQuery;
+				PRODUCT_NAME = TMGParseLiveQuery;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1373,7 +1373,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.parse.livequery.ios;
-				PRODUCT_NAME = ParseLiveQuery;
+				PRODUCT_NAME = TMGParseLiveQuery;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
@@ -1402,7 +1402,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.parse.livequery.ios;
-				PRODUCT_NAME = ParseLiveQuery;
+				PRODUCT_NAME = TMGParseLiveQuery;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
