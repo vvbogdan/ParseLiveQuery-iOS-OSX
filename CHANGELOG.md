@@ -4,6 +4,12 @@
 
 [Full Changelog](https://github.com/parse-community/ParseLiveQuery-iOS-OSX/compare/2.8.0...master)
 
+### 2.8.1
+
+[Full Changelog](https://github.com/parse-community/ParseLiveQuery-iOS-OSX/compare/2.8.0...2.8.1)
+
+- Fix reconnect issues (https://github.com/themeetgroup/ParseLiveQuery-iOS-OSX/pull/1)
+
 ### 2.8.0
 
 [Full Changelog](https://github.com/parse-community/ParseLiveQuery-iOS-OSX/compare/2.7.3...2.8.0)
