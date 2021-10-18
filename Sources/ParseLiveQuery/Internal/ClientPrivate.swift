@@ -124,7 +124,7 @@ extension Client: WebSocketDelegate {
             _ = self.sendOperationAsync(.connect(applicationId: applicationId, sessionToken: sessionToken, clientKey: clientKey))
         case .disconnected(let reason, let code):
             isConnecting = false
-            if shouldPrintWebSocketLog { NSLog("ParseLiveQuery: WebSocket did disconnect with error: \(reason) code:\(code)") }
+            if shouldPrintWebSocketLog { Client.Log("ParseLiveQuery: WebSocket did disconnect with error: \(reason) code:\(code)") }
 
             // TODO: Better retry logic, unless `disconnect()` was explicitly called
             if !userDisconnected {
@@ -133,15 +133,15 @@ extension Client: WebSocketDelegate {
         case .text(let text):
             handleOperationAsync(text).continueWith { [weak self] task in
                 if let error = task.error, self?.shouldPrintWebSocketLog == true {
-                    NSLog("ParseLiveQuery: Error processing message: \(error)")
+                    Client.Log("ParseLiveQuery: Error processing message: \(error)")
                 }
             }
         case .binary(_):
-            if shouldPrintWebSocketLog { NSLog("ParseLiveQuery: Received binary data but we don't handle it...") }
+            if shouldPrintWebSocketLog { Client.Log("ParseLiveQuery: Received binary data but we don't handle it...") }
         case .error(let error):
-            NSLog("ParseLiveQuery: Error processing message: \(String(describing: error))")
+            Client.Log("ParseLiveQuery: Error processing message: \(String(describing: error))")
         case .viabilityChanged(let isViable):
-            if shouldPrintWebSocketLog { NSLog("ParseLiveQuery: WebSocket viability channged to \(isViable ? "" : "not-")viable") }
+            if shouldPrintWebSocketLog { Client.Log("ParseLiveQuery: WebSocket viability channged to \(isViable ? "" : "not-")viable") }
             if !isViable {
                 isConnecting = false
             }
@@ -150,22 +150,22 @@ extension Client: WebSocketDelegate {
                 reconnect()
             }
         case .reconnectSuggested(let isSuggested):
-            if shouldPrintWebSocketLog { NSLog("ParseLiveQuery: WebSocket reconnect is \(isSuggested ? "" : "not ")suggested") }
+            if shouldPrintWebSocketLog { Client.Log("ParseLiveQuery: WebSocket reconnect is \(isSuggested ? "" : "not ")suggested") }
             // TODO: Better retry logic, unless `disconnect()` was explicitly called
             if !userDisconnected, isSuggested {
                 reconnect()
             }
         case .cancelled:
             isConnecting = false
-            if shouldPrintWebSocketLog { NSLog("ParseLiveQuery: WebSocket connection cancelled...") }
+            if shouldPrintWebSocketLog { Client.Log("ParseLiveQuery: WebSocket connection cancelled...") }
             // TODO: Better retry logic, unless `disconnect()` was explicitly called
             if !userDisconnected {
                 reconnect()
             }
         case .pong(_):
-            if shouldPrintWebSocketLog { NSLog("ParseLiveQuery: Received pong but we don't handle it...") }
+            if shouldPrintWebSocketLog { Client.Log("ParseLiveQuery: Received pong but we don't handle it...") }
         case .ping(_):
-            if shouldPrintWebSocketLog { NSLog("ParseLiveQuery: Received ping but we don't handle it...") }
+            if shouldPrintWebSocketLog { Client.Log("ParseLiveQuery: Received ping but we don't handle it...") }
         }
     }
 }
@@ -217,14 +217,14 @@ extension Client {
             let jsonEncoded = operation.JSONObjectRepresentation
             let jsonData = try JSONSerialization.data(withJSONObject: jsonEncoded, options: JSONSerialization.WritingOptions(rawValue: 0))
             let jsonString = String(data: jsonData, encoding: String.Encoding.utf8)
-            if self.shouldPrintWebSocketTrace { NSLog("ParseLiveQuery: Sending message: \(jsonString!)") }
+            if self.shouldPrintWebSocketTrace { Client.Log("ParseLiveQuery: Sending message: \(jsonString!)") }
             self.socket?.write(string: jsonString!)
         }
     }
 
     func handleOperationAsync(_ string: String) -> Task<Void> {
         return Task(.queue(queue)) {
-            if self.shouldPrintWebSocketTrace { NSLog("ParseLiveQuery: Received message: \(string)") }
+            if self.shouldPrintWebSocketTrace { Client.Log("ParseLiveQuery: Received message: \(string)") }
             guard
                 let jsonData = string.data(using: String.Encoding.utf8),
                 let jsonDecoded = try JSONSerialization.jsonObject(with: jsonData, options: JSONSerialization.ReadingOptions(rawValue: 0))

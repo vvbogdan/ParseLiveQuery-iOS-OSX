@@ -18,6 +18,7 @@ import Starscream
  */
 @objc(PFLiveQueryClient)
 open class Client: NSObject {
+    public static var Log: ((String?) -> Void) = { string in NSLog(string ?? "") }
     let host: URL
     let applicationId: String
     let clientKey: String?
@@ -163,7 +164,7 @@ extension Client {
             self.subscriptions.removeLast()
             return self.subscribe(query, handler: handler)
         } else {
-            NSLog("ParseLiveQuery: Warning: The client was explicitly disconnected! You must explicitly call .reconnect() in order to process your subscriptions.")
+            Client.Log("ParseLiveQuery: Warning: The client was explicitly disconnected! You must explicitly call .reconnect() in order to process your subscriptions.")
         }
         
         return handler
